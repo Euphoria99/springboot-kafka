@@ -11,6 +11,7 @@
 	<groupId>dev.pavanbhat</groupId>
 	<artifactId>springboot-kafka-realworld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>springboot-kafka-realworld</name>
 	<description>Project for Spring Boot and Kafka</description>
 	<url/>
@@ -20,6 +21,9 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>kafka-producer-wikimedia</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
