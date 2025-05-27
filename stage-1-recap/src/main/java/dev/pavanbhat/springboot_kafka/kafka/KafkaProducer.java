@@ -12,12 +12,12 @@ public class KafkaProducer {
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    public KafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
+    public KafkaProducer(KafkaTemplate<String, String> template){
+        this.kafkaTemplate = template;
     }
 
     public void sendMessage(String message){
-        LOGGER.info(String.format("Message Sent %s", message));
-        kafkaTemplate.send("JavaGuides", message);
+        LOGGER.info(String.format("Message sent %s", message));
+        kafkaTemplate.send("javaguides",message);
     }
 }
